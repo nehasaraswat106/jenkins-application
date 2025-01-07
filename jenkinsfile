@@ -11,7 +11,7 @@ pipeline {
         // Stage for pulling the code from the repository
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/your-repository.git'
+                git credentialsId: 'your-credentials-id', url: 'https://github.com/nehasaraswat106/jenkins-application.git'
             }
         }
         
