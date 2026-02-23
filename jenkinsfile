@@ -6,7 +6,7 @@ pipeline {
         APP_NAME = "my-app"
         DEPLOY_DIR = "/path/to/deploy"
     }
-
+    # stages
     stages {
         // Stage for pulling the code from the repository
         stage('Checkout Code') {
